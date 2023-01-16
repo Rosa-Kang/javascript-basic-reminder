@@ -100,3 +100,12 @@ let array = ['a', 'b', 'c', 'f'];
 
 array.push('e'); //mutated array with push method
 console.log(array); //now the array has changed.
+
+//method that does not mutate the array :map ,  filter
+array.map((el) => {
+    el
+})
+
+let dogs = array.filter((x) => {
+    
+})
