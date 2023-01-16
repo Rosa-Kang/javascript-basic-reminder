@@ -3,9 +3,11 @@ Build interactive web application.
 
 Every browsers have Javascript engine that can run JS. Javascript engine in FF and Chrome are Spider Monkey and V8.  
 
-In 2009, R. D took the open source of js engine in chrome and embedded inside c++ program. So Node is c++ program that includes google’s v8, js engine. 
+In 2009, R. D took the open source of js engine in chrome and embedded inside c++ program. So Node is c++ program that includes google’s v8, js engine.
 
 So Js can now run on browser and node. Browser and Node provide runtime environment for JS.
+
+- [x] What is Node.js  It is one of the JavaScript environments (Web Browser + Node.js). Node is invented by a genius developer Randle in 2009 and he took the open source of JS engine in chrome and embedded C++ program.
 
 - [x] ECMA Script vs Javascript ?
 :ECMA Script is just a specification and JS is a programming language.
@@ -39,3 +41,36 @@ We can reference an Object so the code is cleaner.
 
 |Javascript Arrays|
 Argument is the input value and the parameter of the function at the time of declaration.
+
+
+Let ourApp = http.createServer()
+
+|Argument vs parameter|
+greet(“argument”);
+Function greet (parameter) { }
+
+|Javascript Object|
+: Object contains properties and methods(: when a function is inside object, we call it method)
+
+
+|Javascript Array|
+A collection of items and it has various method to manipulate the array.
+
+
+|Higher Order Function|
+Higher order function is a function that 1)accepts a function as an argument or 2)returns a function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
