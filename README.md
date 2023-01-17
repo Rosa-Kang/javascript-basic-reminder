@@ -7,7 +7,7 @@ In 2009, R. D took the open source of js engine in chrome and embedded inside c+
 
 So Js can now run on browser and node. Browser and Node provide runtime environment for JS.
 
-- [x] What is Node.js  It is one of the JavaScript environments (Web Browser + Node.js). Node is invented by a genius developer Randle in 2009 and he took the open source of JS engine in chrome and embedded C++ program.
+- [x] What is Node.js It is one of the JavaScript environments (Web Browser + Node.js). Node is invented by a genius developer Randle in 2009 and he took the open source of JS engine in chrome and embedded C++ program.
 
 - [x] ECMA Script vs Javascript ?
 :ECMA Script is just a specification and JS is a programming language.
@@ -47,7 +47,7 @@ Let ourApp = http.createServer()
 
 |Argument vs parameter|
 greet(“argument”);
-Function greet (parameter) { }
+Function greet (parameter) {}
 
 |Javascript Object|
 : Object contains properties and methods(: when a function is inside object, we call it method)
@@ -64,6 +64,63 @@ Higher order function is a function that 1)accepts a function as an argument or 
 |Scope and Context in Javascript|
 Scope has to do with Variable - Let uses block(-curly bracket of block) scope, whereas Var uses function(-curly bracket of function) scope.!!
 Context has to do with Object - 
+
+
+Javascript Object Oriented Programming
+Style of programming or programming paradigm.
+OOP: C#, Java, Ruby, Python and Javascript 
+
+4Pillars : Encapsulation, Abstraction, Inheritance, Polymorphism
+ In OOP, we combine a group of related functions and variables into unit and we call the unit an Object. &we refer to these variables as ‘Property’ and functions as ‘Method’
+
+localStorage
+We group variables and functions into an object and we call it as ‘Encapsulation’
+
+- [x] Why encapsulation is better? : reduce complexity & increase reusability.
+one problem that can be solved by encapsulation is that we don’t need to have so many parameters in one function. 
+Ex. 
+let baseSalary = 50,000;
+let overtime = 10;
+let rate = 20;
+
+function getWage(baseSalary, overtime, rate) {    return baseSalary + (overtime * rate);
+}
+
+vs——————————————————————
+If we use OOP and group variables and method in one object, we don’t have to use that many of parameters in a function.
+: The best functions are those with no parameters.
+
+let employee = {   baseSalary: 50,000,
+  overtime: 10,
+  rate: 20,
+   getWage:function() {    return this.baseSalary + (overtime * rate);
+ }
+};
+
+- [x] Abstraction : reduce complexity + isolate impact of changes
+We can hide some of the properties and method from outside to make those interface simpler, and reduce the impact of the change.
+- [x] Inheritance : eliminate redundant code
+Inheritance is a mechanism that allows you to eliminate redundant code.
+- [x] Polymorphism : refactor ugly switch/case statement
+Poly means ‘many’ and morph means ‘form’ so polymorphism means many forms in OOP. In OOP, polymorphism is a technique that allows you to get rid of long ethanol’s or switch and case statements.
+
+1. Javascript Object
+Const circle = {} // in Javascript, we call curly brackets as ‘object literal’
+
+:find ‘properties’ and ‘method’ from below object*
+const circle = {
+    radius: 1,
+    location: {
+        x:1,
+        y:1
+    },
+    draw: function () {
+        console.log('draw');
+    }
+}
+
+
+
 
 
 
