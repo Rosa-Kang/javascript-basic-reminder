@@ -96,16 +96,75 @@ console.log(myWords);
 // document.write(quadrupleMe(5));
 
 //Returning vs Mutating
-let array = ['a', 'b', 'c', 'f'];
+// let array = ['a', 'b', 'c', 'f'];
 
-array.push('e'); //mutated array with push method
-console.log(array); //now the array has changed.
+// array.push('e'); //mutated array with push method
+// console.log(array); //now the array has changed.
 
 //method that does not mutate the array :map ,  filter
-array.map((el) => {
-    el
-})
+// array.map((el) => {
+//     el
+// })
 
-let dogs = array.filter((x) => {
+// let dogs = array.filter((x) => {
     
-})
+// })
+
+
+//Scope
+
+// let myName = "Brad";
+
+// function amazingFunction() {
+//     if (2 + 2 == 4) {
+//         myName = 'Rosa';
+//         console.log(myName);
+//     }
+// }
+
+// amazingFunction();
+//inside function can reach out to the variable but outside function cannot reach out inside variable.
+
+let john = {
+    firstName:"John",
+    lastName:"Doe",
+    driveCar() {
+        function newFunction() {
+         console.log(this); //this is pointing towards the global object 'window'
+        }
+        newFunction();
+        console.log(this.firstName + " " + this.lastName + " is driving a car.")
+    }
+}
+
+john.driveCar();
+
+function printJohn() {
+    console.log(this.firstName + this.lastName);
+}
+
+printJohn.call(john);
+
+
+//Unanimous function
+function() {
+    alert('thank you for clicking');
+}
+
+// arrow function
+() => alert('thank you for clicking');
+
+let myNumbers = [];
+myNumbers(num => num * 2);
+
+//Function hoisting
+// :usually the ordering of line matters in JS., but some functions like function declaration works as it does 'Function Hoisting'
+
+cool(); //still works : bc of function hoisting. 
+function cool() {
+    console.log('this is super cool');
+}
+//Template Literals : `` back ticks and $sign with curly bracket
+let newName = 'Bryan';
+console.log(`Hello, my name is ${newName} and the sky is blue`);
+

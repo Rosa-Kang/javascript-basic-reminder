@@ -61,8 +61,9 @@ A collection of items and it has various method to manipulate the array.
 Higher order function is a function that 1)accepts a function as an argument or 2)returns a function.
 
 
-
-
+|Scope and Context in Javascript|
+Scope has to do with Variable - Let uses block(-curly bracket of block) scope, whereas Var uses function(-curly bracket of function) scope.!!
+Context has to do with Object - 
 
 
 
