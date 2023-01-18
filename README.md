@@ -146,14 +146,54 @@ function Circle() {}
 
 const circle = new Circle(argument)
 
+<!-- Factory Function -->
+<!-- :It's one way to create an object. With Factory Function, we have defined logic in one place -->
+function createCircle(radius){
+    return {
+        radius,
+        draw () {
+            console.log('draw');
+        }
+    };
+}
+
+const myCircle = createCircle(1);
+<!-- with factory function, we created an object and return the function -->
+
+<!-- Constructor -->
+<!-- Camel Notation : oneTwoThree
+Pascal Notation : OneTwoThreeFour -->
+<!-- :It's another pattern of creating an object. -->
+function CreateCircle(radius){
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+
+const circle = new Circle(1)
+<!-- new operator (1) creates an empty object and set this to point to the object, (3)return the function  -->
+with constructor, we created a new object with new operator and instead of returning the object, we used 'this' keyword and 'pascal naming'.
+
+We can use either way(factory vs constructor) when creating an object with function.
 
 
+Getters and Setters
 
+const person = {
+    firstName: 'Mosh',
+    lastName: 'Hamedani',
+    get fullName () {
+        return `&{person.firstName} ${person.lastName}`;
+        },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+    }
 
-
-
-
-
+person.fullName = 'John Smith';
 
 
 
