@@ -120,6 +120,58 @@ const circle = {
 }
 
 
+- [x] In Javascript we have Value Type; which is also called Primitives and Reference Types; also called  Objects.
+- [x] |Primitives = Value Types| : number, string, boolean, symbol, undefined, null
+- [x] |Object = Reference Types| : Object, Array, Function
+- [x] Primitives are copied by their value and Objects are copied by their reference.
+
+Let num = 10;
+
+function increase(num) {   num++;
+}
+
+increase(num);
+console.log(num); —> still 10 bc’ primitives are copied by their value.
+
+Let obj = {value:10};
+
+function increase(obj) {   obj.value++;
+}
+
+increase(obj);
+console.log(obj) —> obj={value 11};
+
+- [x] We use Constructor function to create an object.
+function Circle() {}
+
+const circle = new Circle(argument)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
